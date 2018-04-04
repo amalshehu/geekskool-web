@@ -6,7 +6,7 @@ body{
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto 60% 40%;
-    grid-template-areas:"header" "body" "features" "apply" "footer";
+    grid-template-areas:"header" "body" "features" "apply" "founders" "footer";
 }
 
 a{
@@ -65,9 +65,15 @@ header{
 }
 
 .apply{
-    background: #540c85;
     grid-area: apply;
+    background: rgb(48, 37, 37);
 }
+
+.founders{
+    grid-area: founders;
+    background: rgb(48, 37, 37);
+}
+
 
 footer{
     background: black;
@@ -88,23 +94,26 @@ ul{
 
 }
 
-ul li{
+ ul li{
     padding: 2em;
     color:whitesmoke;
+    
 }
-ul li span{
+ ul li span{
     display: block;
     font-size: 1.4em;
     margin-bottom: 1em;
     color:#2BF16D;
 }
 
+
+
 @media only screen and (max-width: 500px){
     body{
-        grid-template-areas: "header" "body" "features" "apply" "footer";
+        grid-template-areas: "header" "body" "features" "apply" "founders" "footer";
     }
 
-    ul, .container{
+     ul, .container{
         grid-template-columns: auto;
         grid-template-rows: auto;
     }
