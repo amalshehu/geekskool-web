@@ -1,0 +1,28 @@
+body{
+    font-family: "WOrk Sans";
+    margin: 0%;
+    background: orangered;
+    color: mintcream;
+}
+
+a{
+    text-decoration: none;
+    color: rebeccapurple;
+    font-size: 1.8em;
+    font-weight: 700;
+}
+
+img{
+    width: 100px
+}
+
+header{
+    background: white;
+    padding: 1em;
+}
+
+.container{
+    padding: 4em 1em;
+}
+
+
