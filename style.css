@@ -67,7 +67,7 @@ header{
 
 .apply{
     grid-area: apply;
-    background: rgb(48, 37, 37);
+    background: rgb(102, 60, 126);
 }
 
 .founders{
@@ -83,7 +83,7 @@ footer{
     padding: 1em;
 }
 
-ul{
+.features ul{
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(2, auto);
@@ -95,12 +95,12 @@ ul{
 
 }
 
- ul li{
+.features ul li{
     padding: 2em;
     color:white;
     
 }
- ul li span{
+.features ul li span{
     display: block;
     font-size: 1.4em;
     margin-bottom: 1em;
@@ -114,7 +114,7 @@ ul{
         grid-template-areas: "header" "body" "features" "apply" "founders" "footer";
     }
 
-     ul, .container{
+     .features ul, .container{
         grid-template-columns: auto;
         grid-template-rows: auto;
     }
@@ -159,4 +159,80 @@ ul{
     -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
     box-shadow:0 0 20px rgba(0,0,0,0.8);
     
+    
+  }
+  
+  .btn {
+    display: grid;
+    margin: 100px auto;
+    margin-top: -3em;
+    width: 10em;
+    height: 2em;
+    font-size: 14px;
+    height: 36px;
+    text-align: center;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border:0;
+    border-radius: 2px;
+    background: rgb(241, 239, 239);
+    color:#6100A7;
+    outline:0;
+    box-shadow:0 0 20px rgba(0, 0, 0, 0.473);
+  }
+  .btn :focus {
+    background: darken(white, 12%)  
+  }
+  
+  /*
+   Ripple
+  */
+  .btn-ripple {
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .btn-ripple:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 120px;
+    height: 120px;
+    margin-left: -60px;
+    margin-top: -60px;
+    background: rgba(121, 19, 161, 0.3);
+    border-radius: 100%;
+    transform: scale(0);
+  }
+  
+  @keyframes btn-ripple {
+    0% {
+      transform: scale(0);
+    }
+    20% {
+      transform: scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(2);
+    }
+  }
+  
+  .btn-ripple:not(:active):after {
+    animation: btn-ripple 0.6s ease-out;
+  }
+  
+  .btn-ripple:after {
+    visibility: hidden;
+  }
+  
+  .btn-ripple:focus:after {
+    visibility: visible;
   }
