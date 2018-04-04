@@ -1,7 +1,7 @@
 body{
     font-family: 'Work Sans', sans-serif;
     margin: 0%;
-    background: #BA2523;
+    background: #7600B6;
     color: white;
     display: grid;
     grid-template-columns: auto;
@@ -11,7 +11,7 @@ body{
 
 a{
     text-decoration: none;
-    color: #BA2523;
+    color: white;
     font-size: 1.8em;
     font-weight: 700;
 }
@@ -22,20 +22,43 @@ img{
 }
 
 header{
-    background: white;
+    background: #6100A7;
     padding: 1em;
-    grid-area: header
+    grid-area: header;
+    color:white;
+    -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+    -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+    box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
 }
 
 .container{
     display: grid;
     grid-template-columns: 66% auto;
     grid-area: body;
-    padding: 4em 1em;
+    padding: 2em 0.5em;
+    text-align: center;
 }
-
+.container #content{
+    margin-top: 4.5em;
+    align-items: center;
+}
+.container #logo h1 {
+    font-size: 7em;
+    text-shadow: 0 1px 0 #ccc,
+                 0 2px 0 #c9c9c9,
+                 0 3px 0 #bbb,
+                 0 4px 0 #b9b9b9,
+                 0 5px 0 #aaa,
+                 0 6px 1px rgba(0,0,0,.1),
+                 0 0 5px rgba(0,0,0,.1),
+                 0 1px 3px rgba(0,0,0,.3),
+                 0 3px 5px rgba(0,0,0,.2),
+                 0 5px 10px rgba(0,0,0,.25),
+                 0 10px 10px rgba(0,0,0,.2),
+                 0 20px 20px rgba(0,0,0,.15);
+  }
 .features{
-    background: #571212;
+    background: #384147;
     grid-area: features;
 }
 footer{
@@ -82,3 +105,25 @@ ul li span{
     }
 }
 
+.container #content span{
+    font-family: monospace;
+    overflow: hidden;
+    border-right: .15em solid;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: 
+      typing 5.5s steps(30, end),
+      blink-caret .8s step-end infinite;
+  }
+  
+ 
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 30% }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: greenyellow; }
+  }
