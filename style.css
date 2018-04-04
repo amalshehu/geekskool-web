@@ -1,13 +1,13 @@
 body{
     font-family: "WOrk Sans";
     margin: 0%;
-    background: orangered;
-    color: mintcream;
+    background: #BA2523;
+    color: white;
 }
 
 a{
     text-decoration: none;
-    color: rebeccapurple;
+    color: #BA2523;
     font-size: 1.8em;
     font-weight: 700;
 }
@@ -25,4 +25,22 @@ header{
     padding: 4em 1em;
 }
 
+footer{
+    background: #571212;
+}
 
+ul{
+    margin:0;
+    padding: 0;
+}
+
+ul li{
+    padding: 2em;
+    color:salmon;
+}
+ul li span{
+    display: block;
+    font-size: 1.4em;
+    margin-bottom: 1em;
+    color:#2BF16D;
+}
