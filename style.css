@@ -108,6 +108,8 @@ footer {
   list-style-type: none;
   text-justify: auto;
   align-items: center;
+  margin: 0;
+    padding: 0;
 }
 
 .alumni ul li {
