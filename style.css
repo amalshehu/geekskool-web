@@ -7,7 +7,7 @@ body{
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto 60% 40%;
-    grid-template-areas:"header" "body" "features" "apply" "founders" "footer";
+    grid-template-areas:"header" "body" "features" "apply" "founders" "alumni" "footer";
 }
 
 a{
@@ -64,7 +64,10 @@ header{
     background: rgb(252, 255, 251);
     grid-area: features;
 }
-
+.alumni{
+    background: rgb(105, 194, 75);
+    grid-area: alumni;
+}
 .apply{
     grid-area: apply;
     background: rgb(102, 60, 126);
@@ -72,7 +75,7 @@ header{
 
 .founders{
     grid-area: founders;
-    background: #e3e3e3;
+    background: white;
 }
 
 
@@ -95,6 +98,8 @@ footer{
 
 }
 
+
+
 .features ul li{
     padding: 2em;
     color:white;
@@ -108,12 +113,87 @@ footer{
 }
 
 
+
+
+
+
+.alumni ul{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-column-gap: 0.5em;
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+    /* background-color: royalblue; */
+
+}
+
+
+
+.alumni ul li{
+    padding: 2em;
+    color:white;
+    
+}
+.alumni ul li span{
+    display: block;
+    font-size: 1.4em;
+    margin-bottom: 1em;
+    color:#2BF16D;
+}
+
+
+
+
+.founders ul{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    list-style-type: none;
+    margin:2em;
+    padding: 0;
+    /* background-color: royalblue; */
+
+}
+
+.features ul li{
+    padding: 2em;
+    color:white;
+    
+}
+.features ul li span{
+    display: block;
+    font-size: 1.4em;
+    margin-bottom: 1em;
+    color:#2BF16D;
+}
+
+
+.founders ul{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    list-style-type: none;
+    margin:2em;
+    padding: 0;
+    /* background-color: royalblue; */
+
+}
+
+.founders ul li{
+    padding: 2em;
+    color:rgb(51, 44, 44);
+    
+}
+
+
+
+
 @media only screen and (max-width: 500px){
     body{
-        grid-template-areas: "header" "body" "features" "apply" "founders" "footer";
+        grid-template-areas: "header" "body" "features" "apply" "founders" "alumni" "footer";
     }
 
-     .features ul, .container{
+     .features ul, .container, .founders ul, .alumni ul{
         grid-template-columns: auto;
         grid-template-rows: auto;
     }
@@ -236,89 +316,21 @@ footer{
     visibility: visible;
   }
   .profile-card {
-    margin-bottom: 2em;
-    width: 300px;
-    position: relative;
-    overflow: hidden;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: white;
-    color: #444044;
-    border-radius: 0.5em;
-    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
-    -moz-box-shadow:0 0 20px rgba(0, 0, 0, 0.932);
-    box-shadow:0 0 20px rgba(0,0,0,0.8);
-
-}
-
-  .profile-card-header{
-      width: 100%;
-      height: 200px;
-      overflow: hidden;
-      position: relative;
-  }
-  .profile-card-header:before{
-    content: '';
-    position: absolute;
-    border-top: 30px solid transparent;
-    border-left: 400px solid white;
-    bottom: 0;
-
-  }
-  .profile-card-header img{
-    width: 100%;
-    height: 199px;
-  }
-  .profile-card-content {
-    padding: 10px;
-    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
     text-align: center;
-    background: white;
 }
 
-  .profile-card-content h2{
-      margin: 0 5px 0 0;
-  }
-  .profile-card-content ul{
-      margin: 0;
-      padding: 0;
+.title {
+    color: grey;
+    font-size: 18px;
+}
 
-  }
-  .profile-card-content ul li{
-      list-style: none;
-      display: inline-block;
-  }
-  .profile-card-content ul li a{
+
+.profile-card a {
     text-decoration: none;
-    font-size: 24px;
-    color: #314652;
-    background: white;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    line-height: 30px;
-    transition: 0.2, all;
+    font-size: 22px;
+    color: black;
 }
-.profile-card-content ul li a:hover{
-    transform: scale(1.2);
-}
-.profile-card-footer {
-    width: 100%;
-    height: 34px;
-    background: #363336;
-    position: relative;
-    color: white;
-}
-.profile-card-footer:before{
-    content: '';
-    position: absolute;
-    border-bottom: 30px solid transparent;
-    border-right: 400px solid white;
-    top: -1px;
-  }
-.profile-card-footer p{
-    margin: 0;
-    padding: 2.5em;
-    display: block;
-}
+
