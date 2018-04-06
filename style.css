@@ -69,14 +69,18 @@ header {
 
 .founders {
     grid-area: founders;
-    background: white;
+    background: rgb(124, 110, 110);
 }
 
 footer {
-    background: black;
+    background: #6100A7;
     color: white;
     grid-area: footer;
     padding: 1em;
+}
+.features {
+    background: rgb(252, 255, 251);
+    grid-area: features;
 }
 
 .features ul {
