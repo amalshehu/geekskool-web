@@ -1,4 +1,4 @@
-body{
+body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0%;
     font-kerning: auto;
@@ -7,33 +7,33 @@ body{
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto 60% 40%;
-    grid-template-areas:"header" "body" "features" "apply" "founders" "alumni" "footer";
+    grid-template-areas: "header" "body" "features" "apply" "founders" "alumni" "footer";
 }
 
-a{
+a {
     text-decoration: none;
     color: white;
     font-size: 1em;
     font-weight: 700;
 }
 
-img{
+img {
     width: 100px;
     justify-self: center;
 }
 
-header{
+header {
     font-family: 'Audiowide', cursive;
     background: #6100A7;
     padding: 1em;
     grid-area: header;
-    color:white;
+    color: white;
     -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
     -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
     box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
 }
 
-.container{
+.container {
     font-family: 'Audiowide', cursive;
     display: grid;
     grid-template-columns: 66% auto;
@@ -41,191 +41,165 @@ header{
     padding: 2em 0.5em;
     text-align: center;
 }
-.container #content{
+
+.container #content {
     margin-top: 4.5em;
     align-items: center;
 }
+
 .container #logo h1 {
     font-size: 7em;
-    text-shadow: 0 1px 0 #ccc,
-                 0 2px 0 #c9c9c9,
-                 0 3px 0 #bbb,
-                 0 4px 0 #b9b9b9,
-                 0 5px 0 #aaa,
-                 0 6px 1px rgba(0,0,0,.1),
-                 0 0 5px rgba(0,0,0,.1),
-                 0 1px 3px rgba(0,0,0,.3),
-                 0 3px 5px rgba(115, 216, 33, 0.2),
-                 0 5px 10px rgba(0,0,0,.25),
-                 0 10px 10px rgba(0,0,0,.2),
-                 0 20px 20px rgba(0,0,0,.15);
-  }
-.features{
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(115, 216, 33, 0.2), 0 5px 10px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .2), 0 20px 20px rgba(0, 0, 0, .15);
+}
+
+.features {
     background: rgb(252, 255, 251);
     grid-area: features;
 }
-.alumni{
+
+.alumni {
     background: rgb(105, 194, 75);
     grid-area: alumni;
 }
-.apply{
+
+.apply {
     grid-area: apply;
     background: rgb(102, 60, 126);
 }
 
-.founders{
+.founders {
     grid-area: founders;
     background: white;
 }
 
-
-footer{
+footer {
     background: black;
     color: white;
     grid-area: footer;
     padding: 1em;
 }
 
-.features ul{
+.features ul {
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(2, auto);
     grid-column-gap: 0.5em;
     list-style-type: none;
-    margin:0;
+    margin: 0;
     padding: 0;
     /* background-color: royalblue; */
-
 }
 
-
-
-.features ul li{
+.features ul li {
     padding: 2em;
-    color:white;
-    
+    color: white;
 }
-.features ul li span{
+
+.features ul li span {
     display: block;
     font-size: 1.4em;
     margin-bottom: 1em;
-    color:#2BF16D;
+    color: #2BF16D;
 }
 
-
-
-
-
-
-.alumni ul{
+.alumni ul {
     display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(2, auto);
-    grid-column-gap: 0.5em;
-    list-style-type: none;
-    margin:0;
-    padding: 0;
-    /* background-color: royalblue; */
-
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-gap: 2px;
+  align-items: center;
 }
 
-
-
-.alumni ul li{
+.alumni ul li {
     padding: 2em;
-    color:white;
-    
+    color: white;
 }
-.alumni ul li span{
+
+.alumni ul li span {
     display: block;
     font-size: 1.4em;
     margin-bottom: 1em;
-    color:#2BF16D;
+    color: #2BF16D;
 }
 
-
-
-
-.founders ul{
+.founders ul {
     display: grid;
     grid-template-columns: repeat(3, auto);
     list-style-type: none;
-    margin:2em;
+    margin: 2em;
     padding: 0;
-    /* background-color: royalblue; */
-
 }
 
-.features ul li{
+.features ul li {
     padding: 2em;
-    color:white;
-    
+    color: white;
 }
-.features ul li span{
+
+.features ul li span {
     display: block;
     font-size: 1.4em;
     margin-bottom: 1em;
-    color:#2BF16D;
+    color: #2BF16D;
 }
 
-
-.founders ul{
+.founders ul {
     display: grid;
     grid-template-columns: repeat(3, auto);
     list-style-type: none;
-    margin:2em;
+    margin: 2em;
     padding: 0;
-    /* background-color: royalblue; */
-
 }
 
-.founders ul li{
+.founders ul li {
     padding: 2em;
-    color:rgb(51, 44, 44);
-    
+    color: rgb(51, 44, 44);
 }
 
-
-
-
-@media only screen and (max-width: 500px){
-    body{
+@media only screen and (max-width: 500px) {
+    body {
         grid-template-areas: "header" "body" "features" "apply" "founders" "alumni" "footer";
     }
-
-     .features ul, .container, .founders ul, .alumni ul{
+    .features ul,
+    .container,
+    .founders ul,
+    .alumni ul {
         grid-template-columns: auto;
         grid-template-rows: auto;
     }
-    .container{
+    .container {
         text-align: center;
     }
 }
 
-.container #content span{
+.container #content span {
     font-family: -apple-system, BlinkMacSystemFont, Ubuntu, Cantarell;
     overflow: hidden;
     border-right: .40em solid #2BF16D;
     white-space: nowrap;
     margin: 0 auto;
     letter-spacing: .15em;
-    animation: 
-      typing 5.5s steps(30, end),
-      blink-caret .8s step-end infinite;
-  }
-  
- 
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 38% }
-  }
-  
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: #2BF16D; }
-  }
+    animation: typing 5.5s steps(30, end), blink-caret .8s step-end infinite;
+}
 
-  .card {
+@keyframes typing {
+    from {
+        width: 0
+    }
+    to {
+        width: 38%
+    }
+}
+
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent
+    }
+    50% {
+        border-color: #2BF16D;
+    }
+}
+
+.card {
     border-right: .15em solid rgb(0, 255, 98);
     background: #384147;
     border-radius: 0.4em;
@@ -234,14 +208,12 @@ footer{
     margin: 1rem;
     position: relative;
     width: auto;
-    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
-    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
-    box-shadow:0 0 20px rgba(0,0,0,0.8);
-    
-    
-  }
-  
-  .btn {
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
+.btn {
     display: grid;
     margin: 100px auto;
     margin-top: -3em;
@@ -257,26 +229,28 @@ footer{
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    border:0;
+    border: 0;
     border-radius: 2px;
     background: rgb(241, 239, 239);
-    color:#6100A7;
-    outline:0;
-    box-shadow:0 0 20px rgba(0, 0, 0, 0.473);
-  }
-  .btn :focus {
-    background: darken(white, 12%)  
-  }
-  
-  /*
+    color: #6100A7;
+    outline: 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.473);
+}
+
+.btn :focus {
+    background: darken(white, 12%)
+}
+
+/*
    Ripple
   */
-  .btn-ripple {
+
+.btn-ripple {
     overflow: hidden;
     position: relative;
-  }
-  
-  .btn-ripple:after {
+}
+
+.btn-ripple:after {
     content: '';
     display: block;
     position: absolute;
@@ -289,33 +263,34 @@ footer{
     background: rgba(121, 19, 161, 0.3);
     border-radius: 100%;
     transform: scale(0);
-  }
-  
-  @keyframes btn-ripple {
+}
+
+@keyframes btn-ripple {
     0% {
-      transform: scale(0);
+        transform: scale(0);
     }
     20% {
-      transform: scale(1);
+        transform: scale(1);
     }
     100% {
-      opacity: 0;
-      transform: scale(2);
+        opacity: 0;
+        transform: scale(2);
     }
-  }
-  
-  .btn-ripple:not(:active):after {
+}
+
+.btn-ripple:not(:active):after {
     animation: btn-ripple 0.6s ease-out;
-  }
-  
-  .btn-ripple:after {
+}
+
+.btn-ripple:after {
     visibility: hidden;
-  }
-  
-  .btn-ripple:focus:after {
+}
+
+.btn-ripple:focus:after {
     visibility: visible;
-  }
-  .profile-card {
+}
+
+.profile-card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 300px;
     margin: auto;
@@ -327,10 +302,8 @@ footer{
     font-size: 18px;
 }
 
-
 .profile-card a {
     text-decoration: none;
     font-size: 22px;
     color: black;
 }
-
